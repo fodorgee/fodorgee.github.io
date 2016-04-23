@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Page Title</title>
+	<link rel="stylesheet" type="text/css" href="/bower_components/Slate/dist/css/slate.min.css">
+</head>
+<body>
+	
+	<div class="item-container">
+	  <div class="item-container-content">
+	    <div class="item">
+	      Enter a text you want to convert to QR code. By pressing 'Send' the text list will be sent to your watch.
+	    </div>
+	  </div>
+	</div>
+
+	<div class="item-container">
+	  <div class="item-container-header">Image size</div>
+	  <div class="item-container-content">
+	    <div class="item tab-buttons">
+	      <a name="tab-1" class="tab-button">100x100</a>
+	      <a name="tab-1" class="tab-button active">125x125</a>
+	    </div>
+	  </div>
+
+	  <div class="item-container-footer">
+	    The size of the QR code image to be displayed on your watch.
+	  </div>
+
+	</div>
+
+	<div class="item-container">
+	  <div class="item-container-header">Text List</div>
+	  <div class="item-container-content">
+	    <div id="QRlist" class="item-dynamic-list">
+	      <label class="item">Example Item A</label>
+	      <label class="item">Example Item B</label>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="item-container">
+	  <div class="item-container-header">Input Field</div>
+	  <div class="item-container-content">
+	    <label class="item">
+	      <div class="item-input-wrapper">
+	        <input id="QRstring" type="text" class="item-input" name="input-1" placeholder="Input field">
+	      </div>
+	    </label>
+	  </div>
+	</div>
+
+	<div class="item-container">
+	  <div class="button-container">
+	    <input id="submitButton" type="button" class="item-button" value="SEND">
+	  </div>
+	</div>
+
+	<script src="/bower_components/Slate/dist/js/slate.min.js"></script>
+	<script src="/js/main.js"></script>
+</body>
+</html>
+
